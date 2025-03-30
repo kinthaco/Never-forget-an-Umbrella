@@ -4,8 +4,8 @@ from dateutil import tz
 from datetime import datetime
 from twilio.rest import Client
 #---------------------------Constants----------------------------------------------#
-account_sid = 'AC917d0679a98da1294e24e1c6246aa578'
-auth_token = '7d31b792d3bfe1bba6047c94e9fa47c9'
+account_sid = '******************************'
+auth_token = '*******************************'
 def rain_check(data):
     global account_sid
     global auth_token
@@ -14,7 +14,7 @@ def rain_check(data):
             client = Client(account_sid, auth_token)
             message = client.messages.create(
   												from_='+14707983677',
-  												to='+16473308849',
+  												to='*************',
   												body=f"Carry an umbrella cuz its gonna rain. at {key}:00 hours today")
 				
 def time_coverter(data):
